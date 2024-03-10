@@ -4,7 +4,7 @@ import time
 from PIL import Image
 import json
 import requests
-from streamlit_lottie import st_lottie
+
 
 
 st.set_page_config(page_title="GameShow6", page_icon=":trophy:", layout="wide")
