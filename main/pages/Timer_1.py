@@ -3,7 +3,7 @@ import streamlit as st
 import time
 
 import requests
-from streamlit_lottie import st_lottie
+
 
 st.set_page_config(page_title="GameShow6", page_icon=":trophy:", layout="centered")
 
@@ -22,13 +22,4 @@ if st.button("Start Timer"):
     update_timer()
 
 
-st.write("---")
-url = requests.get(
-        "https://lottie.host/c2601f72-f4f5-4054-b767-b87a466cd3c4/X7kLbX11HR.json")
-url_json = dict()
-if url.status_code == 200:
-        url_json = url.json()
-else:
-         print("Error in the URL")
 
-st_lottie(url_json, height=150, width=160, key='fighting')
